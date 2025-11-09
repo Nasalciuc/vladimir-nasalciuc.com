@@ -1,0 +1,368 @@
+/* ===========================================
+   MOBILE RESPONSIVE STYLES
+   ========================================== */
+
+/* Mobile First Approach */
+@media (max-width: 768px) {
+  
+  /* Layout Adjustments */
+  .cv-container {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 20px 15px;
+    padding-top: 80px;
+  }
+  
+  /* Header Adjustments */
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .profile-summary {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  /* Section Titles */
+  .content-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  /* Experience Items */
+  .experience-item {
+    padding: 20px;
+  }
+  
+  .item-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .item-title {
+    font-size: 1.1rem;
+  }
+  
+  .item-company {
+    font-size: 1rem;
+  }
+  
+  .item-date {
+    align-self: flex-start;
+  }
+  
+  /* Tech Tags */
+  .tech-tags {
+    gap: 6px;
+  }
+  
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+  
+  /* Project Items */
+  .project-item {
+    padding: 20px;
+  }
+  
+  /* Award Items */
+  .award-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .award-rank {
+    font-size: 1.5rem;
+    min-width: auto;
+  }
+  
+  /* Education Items */
+  .education-item {
+    padding: 20px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  
+  .main-content {
+    padding: 15px 10px;
+    padding-top: 75px;
+  }
+  
+  /* Header */
+  .header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .profile-summary {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  /* Sections */
+  .content-section {
+    margin-bottom: 35px;
+  }
+  
+  .content-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Items */
+  .experience-item,
+  .project-item,
+  .education-item {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .item-title {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  
+  .item-company {
+    font-size: 0.9rem;
+  }
+  
+  .item-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* Achievements */
+  .achievements li {
+    font-size: 0.9rem;
+    padding-left: 20px;
+    margin-bottom: 6px;
+  }
+  
+  .achievements li:before {
+    font-size: 1rem;
+  }
+  
+  /* Tech Tags - Smaller */
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+  
+  /* Mobile Header */
+  .mobile-header {
+    padding: 12px 15px;
+  }
+  
+  .mobile-header h1 {
+    font-size: 1.1rem;
+  }
+  
+  /* Menu Button */
+  .menu-toggle {
+    padding: 6px;
+  }
+  
+  .menu-toggle span {
+    width: 22px;
+    height: 2.5px;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  .main-content {
+    padding: 25px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .experience-item,
+  .project-item,
+  .education-item {
+    padding: 22px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  
+  .main-content {
+    padding: 40px 50px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+  }
+  
+  .profile-summary {
+    font-size: 1.15rem;
+    max-width: 1000px;
+  }
+  
+  .content-section h2 {
+    font-size: 2.2rem;
+  }
+  
+  .experience-item,
+  .project-item,
+  .education-item {
+    padding: 30px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .mobile-header {
+    display: none;
+  }
+  
+  .github-link,
+  .contact-item .link {
+    color: #333 !important;
+    text-decoration: underline;
+  }
+  
+  .tech-tag {
+    background: #f0f0f0 !important;
+    color: #333 !important;
+    border: 1px solid #ccc;
+  }
+  
+  .experience-item,
+  .project-item,
+  .education-item {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .profile-photo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .sidebar,
+  .sidebar-overlay,
+  .menu-toggle span {
+    transition: none !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  
+  .main-content {
+    background: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  .header h1 {
+    color: #ffffff;
+  }
+  
+  .subtitle {
+    color: #74b9ff;
+  }
+  
+  .profile-summary {
+    color: #c0c0c0;
+  }
+  
+  .content-section h2 {
+    color: #ffffff;
+  }
+  
+  .experience-item,
+  .education-item {
+    background: #2d2d2d;
+    color: #e0e0e0;
+  }
+  
+  .project-item {
+    background: #2d2d2d;
+    border-color: #404040;
+    color: #e0e0e0;
+  }
+  
+  .item-title {
+    color: #ffffff;
+  }
+  
+  .item-company {
+    color: #74b9ff;
+  }
+  
+  .item-description,
+  .achievements li {
+    color: #c0c0c0;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: no-preference) {
+  
+  .experience-item:hover,
+  .project-item:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* Focus Styles for Accessibility */
+.nav-link:focus,
+.github-link:focus,
+.contact-item .link:focus,
+.menu-toggle:focus {
+  outline: 2px solid #74b9ff;
+  outline-offset: 2px;
+}

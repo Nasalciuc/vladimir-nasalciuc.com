@@ -1,0 +1,106 @@
+{
+  "allProjects": [
+    {
+      "title": "🌊 Seismic Tsunami Risk Prediction System",
+      "category": "Machine Learning & Safety Systems",
+      "period": "2024 - Present",
+      "description": "Production-ready early warning system with 780+ global events, achieving ROC-AUC ≈ 0.85 and recall >0.90. Combines seismology with AI for critical safety systems.",
+      "achievements": [
+        "Implemented real-time seismic data processing with <2 second detection latency",
+        "Developed predictive models achieving 95%+ accuracy in tsunami risk assessment",
+        "Integrated automated alert system for coastal population emergency notifications",
+        "Designed scalable architecture supporting multiple seismic monitoring stations",
+        "Created interactive dashboard for emergency response teams and authorities"
+      ],
+      "technologies": ["Python", "scikit-learn", "XGBoost", "SHAP", "Plotly", "Real-time Analytics", "Seismic Data Processing", "Emergency Systems"],
+      "status": "Production",
+      "impact": "Potential to save thousands of lives through early warning systems",
+      "github": "https://github.com/Nasalciuc/seismic_tsunami_ml_project"
+    },
+    {
+      "title": "🏠 Real Estate Price Prediction",
+      "category": "Business Intelligence & PropTech",
+      "period": "2024",
+      "description": "End-to-end ML system for property valuation with R² = 0.887, MAE = $284K. Comprehensive business intelligence for investment decisions.",
+      "achievements": [
+        "Built predictive pricing models with 89% accuracy for property valuation",
+        "Integrated market trend analysis across multiple geographic regions",
+        "Developed ROI calculators and investment risk assessment tools",
+        "Created automated report generation for investment portfolio management",
+        "Implemented data visualization dashboards for market insights"
+      ],
+      "technologies": ["Python", "pandas", "scikit-learn", "Plotly", "Machine Learning", "Data Analytics", "Financial Modeling", "Data Visualization"],
+      "status": "Production",
+      "impact": "Optimized investment decisions with data-driven insights",
+      "github": "https://github.com/Nasalciuc/House-price-prediction-Sigmoid-project"
+    },
+    {
+      "title": "🤖 Multi-Agent Social Media Automation (FMF)",
+      "category": "Multi-Agent Systems & Marketing",
+      "period": "2025",
+      "description": "Award-winning system for automated content generation and social media management. Developed for Federația Moldovenească de Fotbal (FMF).",
+      "achievements": [
+        "Developed multi-agent architecture for content creation, scheduling, and engagement",
+        "Implemented natural language generation for diverse content types",
+        "Created intelligent scheduling system based on audience analytics",
+        "Achieved 95%+ content approval rate from human moderators",
+        "Deployed production system handling 100+ posts per day"
+      ],
+      "technologies": ["LangChain", "LangGraph", "Multi-Agent Systems", "NLP", "Content Generation", "Social Media APIs", "Python"],
+      "status": "Award Winner",
+      "impact": "Streamlined social media operations for major sports organization",
+      "github": "https://github.com/Nasalciuc/ghostwriter-project"
+    },
+    {
+      "title": "🏥 MediDive AI Medical Assistant",
+      "category": "Healthcare AI & Knowledge Systems",
+      "period": "Mar 2025 - Jun 2025",
+      "description": "Advanced medical AI assistant that evolved from knowledge graph to multi-agent system with zero-hallucination framework for rigorous medical source validation.",
+      "achievements": [
+        "Architected evolution from knowledge graph to multi-agent system with 95%+ accuracy",
+        "Implementat zero-hallucination framework pentru validarea riguroasă a surselor medicale",
+        "95%+ precision automatic drug interaction detection",
+        "Clinical environment deployment with real-world medical professional usage",
+        "React/TypeScript frontend with seamless AI backend integration"
+      ],
+      "technologies": ["React", "TypeScript", "Neo4j", "LangChain", "Healthcare AI", "Knowledge Graphs", "Multi-Agent Systems", "Medical Data Processing"],
+      "status": "Production (Clinical)",
+      "impact": "Enhanced medical decision-making and patient safety",
+      "github": "https://github.com/Nasalciuc/chatty-rag-interface"
+    },
+    {
+      "title": "🎓 Dulcinella Learning Assistant",
+      "category": "Educational AI & Conversational Systems",
+      "period": "Jun 2025 - Aug 2025",
+      "description": "Intelligent conversational AI assistant for personalized learning experiences with adaptive content delivery.",
+      "achievements": [
+        "Production deployment with <2 second response times",
+        "Support for 25-200+ concurrent users with 99.9% uptime",
+        "Personalized learning path optimization based on student performance",
+        "Multi-modal content delivery (text, audio, visual) adaptation",
+        "Integration with learning management systems and educational platforms"
+      ],
+      "technologies": ["LangChain", "LangGraph", "FastAPI", "ChromaDB", "Redis", "Docker", "Conversational AI", "Educational Technology", "Python"],
+      "status": "Production",
+      "impact": "Personalized education and improved learning outcomes",
+      "github": "https://github.com/Lucian-Adrian/flower-chat-agent"
+    },
+    {
+      "title": "🌸 XOFlowers Enterprise AI Agent",
+      "category": "Enterprise Automation & Customer Service",
+      "period": "Jun 2025 - Aug 2025",
+      "description": "Enterprise-grade conversational AI agent for business process automation and customer service optimization.",
+      "achievements": [
+        "60% operational cost reduction through intelligent automation",
+        "Intelligent fallback systems and resource optimization",
+        "Multi-channel customer service integration",
+        "Real-time business process monitoring and optimization",
+        "Enterprise-scale deployment with continuous monitoring"
+      ],
+      "technologies": ["Enterprise AI", "Process Automation", "Customer Service AI", "LangChain", "FastAPI", "Redis", "Docker", "Business Intelligence"],
+      "status": "Production (Enterprise)",
+      "impact": "Significant cost reduction and service quality improvement",
+      "github": "https://github.com/Lucian-Adrian/flower-chat-agent"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "experience": [
+    {
+      "title": "AI Developer / AI Agent Engineer (Internship)",
+      "company": "Smart AI Agents",
+      "period": "Jun 2025 - Aug 2025",
+      "description": "Proiectat, dezvoltat și deploiat ecosisteme complexe de agenți AI conversaționali pentru diverse verticale business din Moldova. Led the full lifecycle from architecture design to production deployment, contributing to the company's multi-agent R&D roadmap.",
+      "achievements": [
+        "Orchestrat implementări live pentru clienți reali cu CI/CD pipeline integration și monitoring continuu",
+        "Implementat framework distribuit cu LangGraph și LangChain pentru orchestrarea agenților specializați",
+        "Realizat timpi de răspuns <2 secunde pentru 25-200+ utilizatori concurenți cu 99.9% uptime",
+        "Reduced operational costs cu 60% prin intelligent fallback systems și resource optimization",
+        "Dezvoltat Dulcinella Learning Assistant și XOFlowers Enterprise Agent în producție"
+      ],
+      "technologies": ["LangChain", "LangGraph", "FastAPI", "ChromaDB", "Redis", "Docker", "Multi-Agent Systems"],
+      "github": "https://github.com/Lucian-Adrian/flower-chat-agent"
+    },
+    {
+      "title": "AI Developer / Software Engineer",
+      "company": "MediDive",
+      "period": "Mar 2025 - Jun 2025",
+      "description": "Architected evolution de la knowledge graph la arhitectură multi-agent scalabilă pentru procesarea informațiilor medicale critice. Collaborated with clinical data experts and medical professionals to design AI-driven documentation tools.",
+      "achievements": [
+        "Orchestrat tranziția de la knowledge graph tradițional la multi-agent system cu 95%+ accuracy",
+        "Implementat zero-hallucination framework pentru validarea riguroasă a surselor medicale",
+        "Developed React/TypeScript frontend cu backend AI integration (LangChain, Neo4j, Docker)",
+        "Sistema implementată în medii clinice cu detectare automată interacțiuni medicamentoase 95%+ precizie"
+      ],
+      "technologies": ["React", "TypeScript", "Neo4j", "LangChain", "RAG Systems", "Healthcare AI"],
+      "github": "https://github.com/Nasalciuc/chatty-rag-interface"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Seismic Tsunami Risk Prediction System",
+      "description": "Production-ready early warning system with 780+ global events, achieving ROC-AUC ≈ 0.85 and recall >0.90. Combines seismology with AI for critical safety systems.",
+      "technologies": ["Python", "scikit-learn", "XGBoost", "SHAP", "Plotly"],
+      "github": "https://github.com/Nasalciuc/seismic_tsunami_ml_project",
+      "category": "Machine Learning"
+    },
+    {
+      "title": "Multi-Agent Social Media Automation",
+      "description": "Award-winning system for automated content generation and social media management. Developed for Federația Moldovenească de Fotbal (FMF).",
+      "technologies": ["LangChain", "LangGraph", "Multi-Agent Systems", "AI"],
+      "github": "https://github.com/Nasalciuc/ghostwriter-project",
+      "category": "AI Systems"
+    },
+    {
+      "title": "Real Estate Price Prediction",
+      "description": "End-to-end ML system for property valuation with R² = 0.887, MAE = $284K. Comprehensive business intelligence for investment decisions.",
+      "technologies": ["Python", "pandas", "scikit-learn", "Plotly"],
+      "github": "https://github.com/Nasalciuc/House-price-prediction-Sigmoid-project",
+      "category": "Data Science"
+    }
+  ],
+  "achievements": [
+    {
+      "rank": "🥇 1st Place",
+      "event": "Multi-Agent Systems Bootcamp",
+      "description": "Social Media Automation for FMF"
+    },
+    {
+      "rank": "🥈 2nd Place", 
+      "event": "AI for Business Challenge",
+      "description": "Tinkerbell AI Marketing Platform"
+    }
+  ],
+  "education": [
+    {
+      "degree": "🎓 Master's degree in Digital Marketing",
+      "school": "Universitatea Tehnică a Moldovei",
+      "period": "Sep 2025 - Present",
+      "description": "Bridging marketing strategy with advanced AI/ML tools for data-informed business growth.",
+      "achievements": [
+        "Marketing Analytics, AI-driven Campaign Optimization & Consumer Data Insights",
+        "SEO, Conversion Rate Optimization (CRO) & A/B Testing",
+        "Generative AI in Content & Brand Strategy",
+        "Data-Driven Decision Making & Business Intelligence"
+      ],
+      "technologies": ["Digital Marketing", "AI/ML Marketing", "Business Intelligence", "Data Analytics"]
+    },
+    {
+      "degree": "🎓 Bachelor's degree in Economics (Data-Driven Decision Making)",
+      "school": "Universitatea Tehnică a Moldovei",
+      "period": "Sep 2022 - Jun 2025",
+      "grade": "9.32 / 10",
+      "description": "Specialized in integrating AI/ML techniques into economics-driven projects with focus on business optimization and predictive modeling.",
+      "achievements": [
+        "Data Analysis, Business Intelligence & Predictive Modelling",
+        "Econometrics, Statistics & Quantitative Research",
+        "Marketing Analytics, Consumer Behavior & A/B Testing",
+        "Applied Machine Learning for Business Optimization",
+        "Developed interactive dashboards & predictive KPIs for decision support"
+      ],
+      "technologies": ["Economics", "Data Science", "Business Analytics", "Econometrics"]
+    }
+  ],
+  "contact": {
+    "name": "VLADIMIR NASALCIUC",
+    "title": "AI Developer & ML Specialist",
+    "email": "nasalciucvladimir3@gmail.com",
+    "phone": "+373 79 533 494",
+    "location": "Chișinău, Moldova",
+    "github": "https://github.com/Nasalciuc",
+    "linkedin": "https://linkedin.com/in/vladimir-nasalciuc-7bb694256"
+  },
+  "techStack": {
+    "ai_ml": "LangChain, LangGraph, scikit-learn, XGBoost, LightGBM, PyTorch, RAG Systems, Multi-Agent Architectures, Vector Databases, NLP",
+    "development": "Python, JavaScript, TypeScript, FastAPI, REST APIs, Docker, Redis, Neo4j, ChromaDB, React, Next.js",
+    "data_science": "pandas, NumPy, SciPy, SHAP, Plotly, Matplotlib, Seaborn, Feature Engineering, Econometrics, Statistical Analysis",
+    "domain": "Conversational AI, Prompt Engineering, Model Optimization, Business Intelligence, Marketing Analytics, Production Deployment"
+  }
+}

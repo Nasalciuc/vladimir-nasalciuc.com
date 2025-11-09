@@ -1,0 +1,1005 @@
+/* ===========================================
+   VLADIMIR NASALCIUC PORTFOLIO - EXACT SCREENSHOT DESIGN
+   ========================================== */
+
+/* === CSS VARIABLES === */
+:root {
+  --sidebar-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  --primary-blue: #3498db;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --text-dark: #2c3e50;
+  --text-light: #7f8c8d;
+  --card-background: #f8f9fa;
+  --border-color: #ecf0f1;
+  --success-color: #f39c12;
+  --sidebar-width: 400px;
+}
+
+/* === GLOBAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === MAIN CONTAINER === */
+.cv-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === SIDEBAR STYLES === */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--sidebar-gradient);
+  color: var(--white);
+  padding: 30px 25px 30px 25px;
+  position: fixed;
+  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* === PROFILE SECTION === */
+.profile-section {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.profile-placeholder {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #2980b9 100%);
+  border-radius: 12px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--white);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 1.2;
+  padding: 10px;
+}
+
+.profile-name {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  color: var(--white);
+}
+
+.profile-title {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 0;
+  color: #bdc3c7;
+}
+
+/* === CONTACT SECTION === */
+.contact-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  width: 16px;
+  text-align: center;
+  color: var(--primary-blue);
+}
+
+/* === NAVIGATION SECTION === */
+.navigation-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.section-header {
+  color: var(--primary-blue);
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-item {
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+.nav-item.active {
+  background: var(--primary-blue);
+}
+
+/* === TECH SECTION === */
+.tech-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.tech-category {
+  margin-bottom: 20px;
+}
+
+.tech-category h4 {
+  color: var(--primary-blue);
+  font-size: 13px;
+  margin: 15px 0 8px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tech-list {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  word-wrap: break-word;
+  white-space: normal;
+  word-spacing: 1px;
+}
+
+/* === EXPERIENCE ITEMS === */
+.experience-item {
+  background: #f8f9fa;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.experience-header h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.company {
+  color: #3498db;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.period {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.website {
+  color: #27ae60;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.experience-description p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.achievements-section h4,
+.key-projects h4,
+.tech-stack h4 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.achievements-section ul,
+.key-projects ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.achievements-section li,
+.key-projects li {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  background: #3498db;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.github-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.github-link a:hover {
+  text-decoration: underline;
+}
+
+/* === ACHIEVEMENT ITEMS === */
+.achievement-item {
+  background: linear-gradient(135deg, #f8f9fa, #ecf0f1);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #f39c12;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.achievement-rank {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f39c12;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.achievement-date {
+  color: #7f8c8d;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.achievement-item h3 {
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.achievement-organization {
+  color: #3498db;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.achievement-item p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* === PROJECT ITEMS === */
+.project-item {
+  background: #f8f9fa;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-header h2 {
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.project-category,
+.project-period,
+.project-type {
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-status {
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-production { 
+  background: #27ae60; 
+  color: white; 
+}
+
+.status-award-winner { 
+  background: #f39c12; 
+  color: white; 
+}
+
+.status-production-clinical { 
+  background: #8e44ad; 
+  color: white; 
+}
+
+.status-production-enterprise { 
+  background: #e67e22; 
+  color: white; 
+}
+
+.project-description p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.detailed-description {
+  background: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detailed-description p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.project-results h4 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.project-results p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* === ARTICLE ITEMS === */
+.article-item {
+  background: #f8f9fa;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.article-type {
+  background: #e74c3c;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.article-item h2 {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.article-venue {
+  color: #3498db;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.article-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.article-date,
+.article-category {
+  color: #7f8c8d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.article-description p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.key-contributions {
+  margin-bottom: 20px;
+}
+
+.key-contributions h4 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.key-contributions ul {
+  margin-left: 20px;
+}
+
+.key-contributions li {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.research-focus {
+  margin: 20px 0;
+}
+
+.research-focus h5 {
+  color: #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.focus-tag {
+  background: #9b59b6;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* === PUBLICATIONS NOTE === */
+.publications-note {
+  background: linear-gradient(135deg, #ecf0f1, #d5dbdb);
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #27ae60;
+}
+
+.publications-note h3 {
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.publications-note p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.research-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stat-item strong {
+  display: block;
+  color: #27ae60;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-item span {
+  color: #7f8c8d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .project-meta,
+  .article-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .tech-tags,
+  .focus-tags,
+  .article-tags {
+    gap: 5px;
+  }
+  
+  .research-stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .experience-item,
+  .project-item,
+  .article-item,
+  .achievement-item {
+    padding: 20px;
+  }
+}
+
+/* === MAIN CONTENT === */
+.main-content {
+  margin-left: var(--sidebar-width);
+  padding: 40px 50px;
+  background: var(--white);
+  min-height: 100vh;
+  width: calc(100% - var(--sidebar-width));
+}
+
+/* === HEADER === */
+.header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.header h1 {
+  font-size: 32px;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header .subtitle {
+  font-size: 18px;
+  color: var(--text-light);
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.profile-summary {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* === CONTENT SECTIONS === */
+.content-section {
+  margin-bottom: 45px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: var(--text-dark);
+  margin: 0 0 25px 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary-blue);
+  font-weight: 600;
+  position: relative;
+}
+
+.section-title::before {
+  content: "●";
+  color: var(--primary-blue);
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+/* === ITEM STYLES === */
+.experience-item,
+.project-item,
+.award-item,
+.education-item {
+  background: var(--card-background);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover,
+.project-item:hover,
+.award-item:hover,
+.education-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* === ITEM HEADER === */
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.item-company {
+  font-size: 15px;
+  color: var(--primary-blue);
+  font-weight: 500;
+}
+
+.item-date {
+  font-size: 13px;
+  color: var(--text-light);
+  background: var(--white);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* === ITEM DESCRIPTION === */
+.item-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* === ACHIEVEMENTS === */
+.achievements {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.achievements li::before {
+  content: "▸";
+  color: var(--primary-blue);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* === TECH TAGS === */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 15px;
+}
+
+.tech-tag {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* === GITHUB LINK === */
+.github-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* === AWARD RANK === */
+.award-rank {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--success-color);
+  margin-bottom: 8px;
+}
+
+/* === GRADE HIGHLIGHT === */
+.grade-highlight {
+  background: linear-gradient(135deg, var(--success-color), #e67e22);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(243, 156, 18, 0.3);
+}
+
+/* === SCROLLBAR STYLING === */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    order: 2;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+    order: 1;
+  }
+
+  .profile-placeholder {
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .header .subtitle {
+    font-size: 16px;
+  }
+
+  .profile-summary {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-date {
+    margin-top: 8px;
+  }
+
+  .experience-item,
+  .project-item,
+  .award-item,
+  .education-item {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .sidebar {
+    padding: 20px 15px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .item-title {
+    font-size: 16px;
+  }
+
+  .experience-item,
+  .project-item,
+  .award-item,
+  .education-item {
+    padding: 15px;
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .sidebar {
+    position: static;
+    width: 300px;
+    height: auto;
+    page-break-inside: avoid;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .cv-container {
+    display: block;
+  }
+
+  .experience-item,
+  .project-item,
+  .award-item,
+  .education-item {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-item,
+.project-item,
+.award-item,
+.education-item {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* === SMOOTH TRANSITIONS === */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* === FOCUS STATES === */
+.nav-item:focus,
+.github-link:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
