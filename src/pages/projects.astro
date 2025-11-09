@@ -63,27 +63,7 @@ const projects = [
     impact: "Enhanced FMF's digital presence and fan engagement",
     github: "https://github.com/vladimirnasalciuc/fmf-social-automation"
   },
-  {
-    title: "🛡️ Crisis Management & Reputation Monitoring System",
-    category: "AI for Crisis Management",
-    period: "2025",
-    description: "AI-powered system for monitoring and predicting organizational crisis situations with specialized agents for early problem identification.",
-    achievements: [
-      "🏆 GRAND PRIX - AI Media Hackathon - Iainactiune (Feb 2025)",
-      "Real-time crisis detection across multiple communication channels",
-      "Predictive analytics for reputation risk assessment",
-      "Automated alert system for crisis management teams",
-      "Sentiment analysis and brand perception monitoring",
-      "Integration with social media and news monitoring platforms"
-    ],
-    technologies: [
-      "AI Agents", "Sentiment Analysis", "Real-time Monitoring", "NLP", 
-      "Crisis Management", "Predictive Analytics", "Social Media APIs", "Python"
-    ],
-    status: "Award Winner",
-    impact: "Proactive crisis prevention and reputation protection",
-    github: "https://github.com/vladimirnasalciuc/crisis-management-ai"
-  },
+
   {
     title: "🚀 Tinkerbell AI Marketing Platform",
     category: "AI Marketing Automation",
@@ -166,9 +146,6 @@ const projects = [
     github: "https://github.com/vladimirnasalciuc/xoflowers-enterprise"
   }
 ];
-
-const categories = [...new Set(projects.map(p => p.category))];
-const statuses = [...new Set(projects.map(p => p.status))];
 ---
 
 <CVLayout 
@@ -183,31 +160,6 @@ const statuses = [...new Set(projects.map(p => p.status))];
       A comprehensive collection of AI-driven projects spanning safety systems, healthcare technology, 
       business automation, and educational platforms. Each project demonstrates practical applications 
       of machine learning, multi-agent systems, and conversational AI technologies.
-    </div>
-  </div>
-
-  <!-- Filter Section -->
-  <div class="content-section">
-    <h2>Filter Projects</h2>
-    <div class="filter-container">
-      <div class="filter-group">
-        <label>Category:</label>
-        <select id="categoryFilter" class="filter-select">
-          <option value="">All Categories</option>
-          {categories.map(cat => (
-            <option value={cat}>{cat}</option>
-          ))}
-        </select>
-      </div>
-      <div class="filter-group">
-        <label>Status:</label>
-        <select id="statusFilter" class="filter-select">
-          <option value="">All Status</option>
-          {statuses.map(status => (
-            <option value={status}>{status}</option>
-          ))}
-        </select>
-      </div>
     </div>
   </div>
 
@@ -270,29 +222,6 @@ const statuses = [...new Set(projects.map(p => p.status))];
     </div>
   </div>
 
-  <!-- Project Statistics -->
-  <div class="content-section">
-    <h2>Project Statistics</h2>
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">{projects.length}</div>
-        <div class="stat-label">Total Projects</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">{projects.filter(p => p.status.includes('Award')).length}</div>
-        <div class="stat-label">Award Winners</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">{projects.filter(p => p.status === 'Production').length}</div>
-        <div class="stat-label">In Production</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">{categories.length}</div>
-        <div class="stat-label">Technology Areas</div>
-      </div>
-    </div>
-  </div>
-
   <!-- Technologies Overview -->
   <div class="content-section">
     <h2>Technologies Used</h2>
@@ -332,36 +261,3 @@ const statuses = [...new Set(projects.map(p => p.status))];
     </div>
   </div>
 </CVLayout>
-
-<script>
-  // Project filtering functionality
-  if (typeof window !== 'undefined') {
-    document.addEventListener('DOMContentLoaded', function() {
-      function filterProjects() {
-        const categoryFilter = document.getElementById('categoryFilter') as HTMLSelectElement;
-        const statusFilter = document.getElementById('statusFilter') as HTMLSelectElement;
-        const projectItems = document.querySelectorAll('.project-item');
-
-        const selectedCategory = categoryFilter?.value || '';
-        const selectedStatus = statusFilter?.value || '';
-        
-        projectItems.forEach(item => {
-          const element = item as HTMLElement;
-          const itemCategory = element.getAttribute('data-category') || '';
-          const itemStatus = element.getAttribute('data-status') || '';
-          
-          const matchesCategory = !selectedCategory || itemCategory === selectedCategory;
-          const matchesStatus = !selectedStatus || itemStatus === selectedStatus;
-          
-          element.style.display = (matchesCategory && matchesStatus) ? 'block' : 'none';
-        });
-      }
-
-      const categoryFilter = document.getElementById('categoryFilter');
-      const statusFilter = document.getElementById('statusFilter');
-      
-      categoryFilter?.addEventListener('change', filterProjects);
-      statusFilter?.addEventListener('change', filterProjects);
-    });
-  }
-</script>

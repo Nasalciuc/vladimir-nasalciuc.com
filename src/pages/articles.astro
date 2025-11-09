@@ -38,119 +38,12 @@ const articles = [
     readTime: "18 min",
     status: "published"
   },
-  {
-    title: "🧠 The Future of Multi-Agent Systems in Healthcare",
-    category: "Technical Article",
-    date: "August 2025",
-    venue: "AI in Healthcare Blog",
-    description: "Exploring the revolutionary potential of multi-agent AI systems in healthcare, from diagnostic assistance to treatment optimization and medical research acceleration.",
-    highlights: [
-      "Zero-hallucination frameworks for medical AI reliability",
-      "Agent specialization in diagnostic, therapeutic, and monitoring tasks",
-      "Federated learning approaches for privacy-preserving medical AI",
-      "Real-world deployment considerations in clinical environments",
-      "Ethical implications and regulatory compliance in healthcare AI"
-    ],
-    technologies: ["Healthcare AI", "Multi-Agent Systems", "Federated Learning", "Medical Ethics", "Clinical Deployment"],
-    type: "Technical Article",
-    readTime: "12 min",
-    status: "published"
-  },
-  {
-    title: "🌊 Real-Time ML for Critical Safety Systems",
-    category: "Technical Deep Dive",
-    date: "July 2025", 
-    venue: "Emergency Systems Quarterly",
-    description: "Technical analysis of implementing real-time machine learning systems for critical safety applications, with case studies from tsunami prediction and emergency response systems.",
-    highlights: [
-      "Sub-2-second detection latency requirements and optimization strategies",
-      "Fault-tolerant architecture design for 99.99% uptime requirements",
-      "Edge computing deployment for distributed sensor networks",
-      "Model uncertainty quantification for safety-critical decisions",
-      "Integration with legacy emergency response infrastructure"
-    ],
-    technologies: ["Real-time ML", "Edge Computing", "Safety Systems", "Distributed Architecture", "Emergency Response"],
-    type: "Technical Deep Dive",
-    readTime: "20 min", 
-    status: "published"
-  },
-  {
-    title: "💼 ROI Optimization Through AI Marketing Automation",
-    category: "Business Analysis",
-    date: "June 2025",
-    venue: "Marketing Technology Review",
-    description: "Detailed analysis of achieving 16x-83x ROI improvements through intelligent marketing automation, featuring real-world case studies and implementation strategies.",
-    highlights: [
-      "Quantitative analysis of AI-driven customer acquisition costs reduction",
-      "Predictive lead scoring and conversion rate optimization techniques",
-      "Multi-channel campaign orchestration and attribution modeling",
-      "Customer lifetime value prediction and segmentation strategies",
-      "A/B testing automation and statistical significance optimization"
-    ],
-    technologies: ["Marketing AI", "Customer Analytics", "Lead Scoring", "Campaign Optimization", "Statistical Analysis"],
-    type: "Business Analysis",
-    readTime: "14 min",
-    status: "published"
-  },
-  {
-    title: "🔄 From Knowledge Graphs to Multi-Agent Architectures",
-    category: "Technical Tutorial",
-    date: "April 2025",
-    venue: "AI Engineering Weekly",
-    description: "Step-by-step guide for evolving traditional knowledge graph systems into scalable multi-agent architectures, with practical examples from healthcare and enterprise applications.",
-    highlights: [
-      "Migration strategies from static knowledge graphs to dynamic agent systems",
-      "Agent specialization patterns and communication protocols",
-      "Performance optimization and scalability considerations",
-      "Integration with existing enterprise systems and databases",
-      "Monitoring and debugging multi-agent system deployments"
-    ],
-    technologies: ["Knowledge Graphs", "Multi-Agent Systems", "System Architecture", "Enterprise Integration", "Performance Optimization"],
-    type: "Technical Tutorial", 
-    readTime: "16 min",
-    status: "published"
-  },
-  {
-    title: "🎯 Conversational AI Design Patterns for Enterprise",
-    category: "Design Patterns",
-    date: "September 2025",
-    venue: "Enterprise AI Quarterly",
-    description: "Comprehensive guide to proven design patterns for enterprise-grade conversational AI systems, covering scalability, reliability, and user experience optimization.",
-    highlights: [
-      "Scalable conversation state management patterns",
-      "Fallback strategies and graceful degradation techniques",
-      "Enterprise security and compliance considerations",
-      "Multi-modal conversation design (voice, text, visual)",
-      "Integration patterns with existing business systems"
-    ],
-    technologies: ["Conversational AI", "Enterprise Architecture", "System Design", "User Experience", "Security"],
-    type: "Design Patterns",
-    readTime: "13 min",
-    status: "draft"
-  },
-  {
-    title: "📊 Predictive Analytics in Real Estate Investment",
-    category: "Data Science",
-    date: "October 2025",
-    venue: "PropTech Analytics Journal",
-    description: "Deep dive into machine learning approaches for real estate investment analysis, featuring predictive modeling techniques and market trend analysis.",
-    highlights: [
-      "Time series forecasting for property value prediction",
-      "Feature engineering for real estate market indicators",
-      "Risk assessment modeling for investment portfolios",
-      "Geographic and demographic factor integration",
-      "Model interpretability for investment decision support"
-    ],
-    technologies: ["Predictive Analytics", "Real Estate", "Time Series", "Risk Modeling", "Financial Analysis"],
-    type: "Data Science",
-    readTime: "17 min",
-    status: "draft"
-  }
-];
 
-const categories = [...new Set(articles.map(a => a.category))];
-const statuses = [...new Set(articles.map(a => a.status))];
-const venues = [...new Set(articles.map(a => a.venue))];
+
+
+
+
+];
 ---
 
 <CVLayout 
@@ -165,43 +58,6 @@ const venues = [...new Set(articles.map(a => a.venue))];
       A collection of technical articles, research papers, and industry insights covering AI implementation, 
       multi-agent systems, healthcare technology, business automation, and emerging trends in artificial intelligence. 
       Each piece combines theoretical foundations with practical, real-world applications.
-    </div>
-  </div>
-
-  <!-- Search & Filter Section -->
-  <div class="content-section">
-    <h2>Search & Filter</h2>
-    <div class="search-container">
-      <div class="search-box">
-        <input 
-          type="text" 
-          id="searchInput" 
-          placeholder="Search articles by title, description, or technology..."
-          class="search-input"
-        />
-        <span class="search-icon">🔍</span>
-      </div>
-      
-      <div class="filter-container">
-        <div class="filter-group">
-          <label>Category:</label>
-          <select id="categoryFilter" class="filter-select">
-            <option value="">All Categories</option>
-            {categories.map(cat => (
-              <option value={cat}>{cat}</option>
-            ))}
-          </select>
-        </div>
-        <div class="filter-group">
-          <label>Status:</label>
-          <select id="statusFilter" class="filter-select">
-            <option value="">All Status</option>
-            {statuses.map(status => (
-              <option value={status}>{status.charAt(0).toUpperCase() + status.slice(1)}</option>
-            ))}
-          </select>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -249,148 +105,12 @@ const venues = [...new Set(articles.map(a => a.venue))];
           
           <div class="article-footer">
             <span class="article-type">{article.type}</span>
-            {article.status === 'published' && (
-              <button class="read-more-btn">Read Full Article →</button>
-            )}
-            {article.status === 'draft' && (
-              <button class="preview-btn" disabled>Coming Soon</button>
-            )}
           </div>
         </div>
       ))}
     </div>
   </div>
 
-  <!-- Research Statistics -->
-  <div class="content-section">
-    <h2>Research Impact</h2>
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">{articles.length}</div>
-        <div class="stat-label">Total Articles</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">{articles.filter(a => a.status === 'published').length}</div>
-        <div class="stat-label">Published</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">{articles.filter(a => a.type === 'Published Research').length}</div>
-        <div class="stat-label">Research Papers</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">{venues.length}</div>
-        <div class="stat-label">Publication Venues</div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Research Topics -->
-  <div class="content-section">
-    <h2>Research Areas</h2>
-    <div class="topics-grid">
-      <div class="topic-item">
-        <h4>🤖 Multi-Agent Systems</h4>
-        <p>Research on autonomous agent architectures, coordination protocols, and enterprise applications.</p>
-        <div class="topic-count">{articles.filter(a => a.technologies.includes('Multi-Agent Systems')).length} articles</div>
-      </div>
-      <div class="topic-item">
-        <h4>🏥 Healthcare AI</h4>
-        <p>AI applications in medical environments, patient safety, and clinical decision support systems.</p>
-        <div class="topic-count">{articles.filter(a => a.technologies.includes('Healthcare AI')).length} articles</div>
-      </div>
-      <div class="topic-item">
-        <h4>💬 Conversational AI</h4>
-        <p>Natural language processing, chatbot design, and enterprise conversation systems.</p>
-        <div class="topic-count">{articles.filter(a => a.technologies.includes('Conversational AI')).length} articles</div>
-      </div>
-      <div class="topic-item">
-        <h4>📊 Predictive Analytics</h4>
-        <p>Machine learning for forecasting, risk assessment, and data-driven decision making.</p>
-        <div class="topic-count">{articles.filter(a => a.technologies.includes('Predictive Analytics')).length} articles</div>
-      </div>
-      <div class="topic-item">
-        <h4>🚀 Enterprise AI</h4>
-        <p>Scalable AI deployment, business process automation, and organizational transformation.</p>
-        <div class="topic-count">{articles.filter(a => a.category.includes('Enterprise') || a.category.includes('Business')).length} articles</div>
-      </div>
-      <div class="topic-item">
-        <h4>🛡️ Safety Systems</h4>
-        <p>AI for critical infrastructure, emergency response, and life-safety applications.</p>
-        <div class="topic-count">{articles.filter(a => a.technologies.includes('Safety Systems') || a.technologies.includes('Emergency Response')).length} articles</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Newsletter Signup -->
-  <div class="content-section">
-    <h2>Stay Updated</h2>
-    <div class="newsletter-signup">
-      <h4>Get notified about new articles and research</h4>
-      <p>Subscribe to receive updates when new technical articles and research papers are published.</p>
-      <div class="newsletter-form">
-        <input type="email" placeholder="Enter your email" class="newsletter-input" />
-        <button class="newsletter-btn">Subscribe</button>
-      </div>
-    </div>
-  </div>
 </CVLayout>
 
-<script>
-  // Articles filtering and search functionality  
-  if (typeof window !== 'undefined') {
-    document.addEventListener('DOMContentLoaded', function() {
-      function filterArticles() {
-        const searchInput = document.getElementById('searchInput') as HTMLInputElement;
-        const categoryFilter = document.getElementById('categoryFilter') as HTMLSelectElement;
-        const statusFilter = document.getElementById('statusFilter') as HTMLSelectElement;
-        const articleItems = document.querySelectorAll('.article-item');
-        
-        const searchTerm = searchInput?.value?.toLowerCase() || '';
-        const selectedCategory = categoryFilter?.value || '';
-        const selectedStatus = statusFilter?.value || '';
-        
-        articleItems.forEach(item => {
-          const element = item as HTMLElement;
-          const title = element.querySelector('.article-title')?.textContent?.toLowerCase() || '';
-          const description = element.querySelector('.article-description')?.textContent?.toLowerCase() || '';
-          const technologies = Array.from(element.querySelectorAll('.tech-tag')).map(tag => tag.textContent?.toLowerCase() || '').join(' ');
-          
-          const itemCategory = element.getAttribute('data-category') || '';
-          const itemStatus = element.getAttribute('data-status') || '';
-          
-          const matchesSearch = !searchTerm || 
-            title.includes(searchTerm) || 
-            description.includes(searchTerm) || 
-            technologies.includes(searchTerm);
-          
-          const matchesCategory = !selectedCategory || itemCategory === selectedCategory;
-          const matchesStatus = !selectedStatus || itemStatus === selectedStatus;
-          
-          element.style.display = (matchesSearch && matchesCategory && matchesStatus) ? 'block' : 'none';
-        });
-      }
-
-      const searchInput = document.getElementById('searchInput');
-      const categoryFilter = document.getElementById('categoryFilter');
-      const statusFilter = document.getElementById('statusFilter');
-      
-      searchInput?.addEventListener('input', filterArticles);
-      categoryFilter?.addEventListener('change', filterArticles);
-      statusFilter?.addEventListener('change', filterArticles);
-
-      // Newsletter signup
-      const newsletterBtn = document.querySelector('.newsletter-btn') as HTMLButtonElement;
-      const newsletterInput = document.querySelector('.newsletter-input') as HTMLInputElement;
-      
-      newsletterBtn?.addEventListener('click', function() {
-        const email = newsletterInput?.value;
-        if (email && email.includes('@')) {
-          alert('Thank you for subscribing! You will receive updates about new articles.');
-          newsletterInput.value = '';
-        } else {
-          alert('Please enter a valid email address.');
-        }
-      });
-    });
-  }
-</script>
