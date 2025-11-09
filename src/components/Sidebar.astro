@@ -12,9 +12,7 @@ const currentPath = Astro.url.pathname;
 <div class="sidebar">
   <div class="profile-section">
     <div class="photo-placeholder">
-      <div class="photo-initials">
-        <span class="initials">VN</span>
-      </div>
+      <img src={`${import.meta.env.BASE_URL}/vladimir-photo.jpg`} alt="Vladimir Nasalciuc" class="profile-photo" loading="eager" />
     </div>
     <div class="name">VLADIMIR NASALCIUC</div>
     <div class="title">AI Developer & ML Specialist</div>
