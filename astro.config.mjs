@@ -3,8 +3,8 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://vladimir-nasalciuc.com',
-  base: '/',
+  site: 'https://nasalciuc.github.io',
+  base: '/vladimir-nasalciuc.com',
   output: 'static',
   outDir: './dist',
   publicDir: './public',
