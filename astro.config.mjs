@@ -10,9 +10,11 @@ export default defineConfig({
   publicDir: './public',
   srcDir: './src',
   compressHTML: true,
+  trailingSlash: 'ignore',
   build: {
     assets: '_astro',
-    assetsPrefix: undefined
+    assetsPrefix: undefined,
+    format: 'directory' // CRUCIAL: generează /about/index.html în loc de /about.html
   },
   vite: {
     build: {
