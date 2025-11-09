@@ -1,0 +1,220 @@
+---
+import CVLayout from '@/layouts/CVLayout.astro';
+
+const featuredProjects = [
+  {
+    title: "Seismic Tsunami Risk Prediction System",
+    description: "Production-ready early warning system with 780+ global events, achieving ROC-AUC ≈ 0.85 and recall >0.90. Combines seismology with AI for critical safety systems.",
+    tech: ["Python", "scikit-learn", "XGBoost", "SHAP", "Plotly"],
+    link: "https://github.com/Nasalciuc/seismic_tsunami_ml_project"
+  },
+  {
+    title: "Multi-Agent Social Media Automation",
+    description: "Award-winning system for automated content generation and social media management. Developed for Federația Moldovenească de Fotbal (FMF).",
+    tech: ["LangChain", "LangGraph", "Multi-Agent Systems", "AI"],
+    link: "https://github.com/Nasalciuc/ghostwriter-project"
+  },
+  {
+    title: "Real Estate Price Prediction",
+    description: "End-to-end ML system for property valuation with R² = 0.887, MAE = $284K. Comprehensive business intelligence for investment decisions.",
+    tech: ["Python", "pandas", "scikit-learn", "Plotly"],
+    link: "https://github.com/Nasalciuc/House-price-prediction-Sigmoid-project"
+  }
+];
+
+const achievements = [
+  {
+    title: "🏆 GRAND PRIX",
+    event: "AI Media Hackathon",
+    description: "Crisis Management & Reputation Monitoring System"
+  },
+  {
+    title: "🥇 1st Place",
+    event: "Multi-Agent Systems Bootcamp",
+    description: "Social Media Automation for FMF"
+  },
+  {
+    title: "🥈 2nd Place",
+    event: "AI for Business Challenge",
+    description: "Tinkerbell AI Marketing Platform"
+  }
+];
+---
+
+<CVLayout title="Vladimir Nasalciuc - AI Developer & ML Specialist">
+  <!-- Header Section -->
+  <div class="header">
+    <h1>VLADIMIR NASALCIUC</h1>
+    <div class="subtitle">AI Developer | Software Engineer | ML Specialist</div>
+    <div class="profile-summary">
+      AI Engineer & Machine Learning Specialist with proven track record in developing scalable multi-agent systems, 
+      intelligent conversational assistants, and data-driven AI pipelines with demonstrable production impact. 
+      I combine software engineering precision with deep understanding of ML, data science, and system architecture — 
+      from conversation agents and RAG ecosystems to physics-informed ML models. Strong focus on performance optimization, 
+      interpretability, and real-world business impact across healthcare, e-commerce, and safety-critical systems.
+    </div>
+  </div>
+
+  <!-- Professional Experience -->
+  <div class="content-section">
+    <h2>Professional Experience</h2>
+
+    <div class="experience-item">
+      <div class="item-header">
+        <div>
+          <div class="item-title">AI Developer / AI Agent Engineer (Internship)</div>
+          <div class="item-company">Smart AI Agents</div>
+        </div>
+        <div class="item-date">Jun 2025 - Aug 2025</div>
+      </div>
+      <div class="item-description">
+        Proiectat, dezvoltat și deploiat ecosisteme complexe de agenți AI conversaționali pentru diverse verticale business din Moldova. Led the full lifecycle from architecture design to production deployment, contributing to the company's multi-agent R&D roadmap.
+      </div>
+      <ul class="achievements">
+        <li>Orchestrat implementări live pentru clienți reali cu CI/CD pipeline integration și monitoring continuu</li>
+        <li>Implementat framework distribuit cu LangGraph și LangChain pentru orchestrarea agenților specializați</li>
+        <li>Realizat timpi de răspuns &lt;2 secunde pentru 25-200+ utilizatori concurenți cu 99.9% uptime</li>
+        <li>Reduced operational costs cu 60% prin intelligent fallback systems și resource optimization</li>
+        <li>Dezvoltat Dulcinella Learning Assistant și XOFlowers Enterprise Agent în producție</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tech-tag">LangChain</span>
+        <span class="tech-tag">LangGraph</span>
+        <span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">ChromaDB</span>
+        <span class="tech-tag">Redis</span>
+        <span class="tech-tag">Docker</span>
+        <span class="tech-tag">Multi-Agent Systems</span>
+      </div>
+      <a href="https://github.com/Lucian-Adrian/flower-chat-agent" class="github-link" target="_blank">🔗 View XOFlowers Project</a>
+    </div>
+
+    <div class="experience-item">
+      <div class="item-header">
+        <div>
+          <div class="item-title">AI Developer / Software Engineer</div>
+          <div class="item-company">MediDive</div>
+        </div>
+        <div class="item-date">Mar 2025 - Jun 2025</div>
+      </div>
+      <div class="item-description">
+        Architected evolution de la knowledge graph la arhitectură multi-agent scalabilă pentru procesarea informațiilor medicale critice. Collaborated with clinical data experts and medical professionals to design AI-driven documentation tools.
+      </div>
+      <ul class="achievements">
+        <li>Orchestrat tranziția de la knowledge graph tradițional la multi-agent system cu 95%+ accuracy</li>
+        <li>Implementat zero-hallucination framework pentru validarea riguroasă a surselor medicale</li>
+        <li>Developed React/TypeScript frontend cu backend AI integration (LangChain, Neo4j, Docker)</li>
+        <li>Sistema implementată în medii clinice cu detectare automată interacțiuni medicamentoase 95%+ precizie</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">Neo4j</span>
+        <span class="tech-tag">LangChain</span>
+        <span class="tech-tag">RAG Systems</span>
+        <span class="tech-tag">Healthcare AI</span>
+      </div>
+      <a href="https://github.com/Nasalciuc/chatty-rag-interface" class="github-link" target="_blank">🔗 View MediDive Project</a>
+    </div>
+  </div>
+
+  <!-- Featured Projects -->
+  <div class="content-section">
+    <h2>Featured Projects</h2>
+    
+    {featuredProjects.map((project) => (
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">{project.title}</div>
+          </div>
+        </div>
+        <div class="item-description">
+          {project.description}
+        </div>
+        <div class="tech-tags">
+          {project.tech.map((tech) => (
+            <span class="tech-tag">{tech}</span>
+          ))}
+        </div>
+        <a href={project.link} class="github-link" target="_blank">🔗 View Project</a>
+      </div>
+    ))}
+  </div>
+
+  <!-- Awards & Achievements -->
+  <div class="content-section">
+    <h2>Recent Achievements</h2>
+
+    {achievements.map((achievement) => (
+      <div class="award-item">
+        <div class="award-rank">{achievement.title}</div>
+        <div class="item-header">
+          <div>
+            <div class="item-company">{achievement.event}</div>
+          </div>
+        </div>
+        <div class="item-description">
+          {achievement.description}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Education -->
+  <div class="content-section">
+    <h2>Education</h2>
+
+    <div class="education-item">
+      <div class="item-header">
+        <div>
+          <div class="item-title">🎓 Master's degree in Digital Marketing</div>
+          <div class="item-company">Universitatea Tehnică a Moldovei</div>
+        </div>
+        <div class="item-date">Sep 2025 - Present</div>
+      </div>
+      <div class="item-description">
+        Bridging marketing strategy with advanced AI/ML tools for data-informed business growth.
+      </div>
+      <ul class="achievements">
+        <li>Marketing Analytics, AI-driven Campaign Optimization & Consumer Data Insights</li>
+        <li>SEO, Conversion Rate Optimization (CRO) & A/B Testing</li>
+        <li>Generative AI in Content & Brand Strategy</li>
+        <li>Data-Driven Decision Making & Business Intelligence</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tech-tag">Digital Marketing</span>
+        <span class="tech-tag">AI/ML Marketing</span>
+        <span class="tech-tag">Business Intelligence</span>
+        <span class="tech-tag">Data Analytics</span>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="item-header">
+        <div>
+          <div class="item-title">🎓 Bachelor's degree in Economics (Data-Driven Decision Making)</div>
+          <div class="item-company">Universitatea Tehnică a Moldovei</div>
+        </div>
+        <div class="item-date">Sep 2022 - Jun 2025</div>
+      </div>
+      <div class="item-description">
+        Specialized in integrating AI/ML techniques into economics-driven projects with focus on business optimization and predictive modeling.
+        <div class="grade-highlight">Grade: 9.32 / 10</div>
+      </div>
+      <ul class="achievements">
+        <li>Data Analysis, Business Intelligence & Predictive Modelling</li>
+        <li>Econometrics, Statistics & Quantitative Research</li>
+        <li>Marketing Analytics, Consumer Behavior & A/B Testing</li>
+        <li>Applied Machine Learning for Business Optimization</li>
+        <li>Developed interactive dashboards & predictive KPIs for decision support</li>
+      </ul>
+      <div class="tech-tags">
+        <span class="tech-tag">Economics</span>
+        <span class="tech-tag">Data Science</span>
+        <span class="tech-tag">Business Analytics</span>
+        <span class="tech-tag">Econometrics</span>
+      </div>
+    </div>
+  </div>
+</CVLayout>

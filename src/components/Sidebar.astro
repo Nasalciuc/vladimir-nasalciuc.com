@@ -1,0 +1,254 @@
+---
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Articles', href: '/articles' },
+  { name: 'Contact', href: '/contact' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<div class="sidebar">
+  <div class="profile-section">
+    <div class="photo-placeholder">
+      <img src="/vladimir-photo.jpg" alt="Vladimir Nasalciuc" class="profile-photo" />
+    </div>
+    <div class="name">VLADIMIR NASALCIUC</div>
+    <div class="title">AI Developer & ML Specialist</div>
+  </div>
+
+  <div class="contact-info">
+    <div class="contact-item">
+      <span class="contact-icon">📧</span>
+      <span>nasalciucvladimir3@gmail.com</span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">📱</span>
+      <span>+373 79 533 494</span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">📍</span>
+      <span>Chișinău, Moldova</span>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">🔗</span>
+      <a href="https://github.com/Nasalciuc" target="_blank" class="link">github.com/Nasalciuc</a>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">💼</span>
+      <a href="https://linkedin.com/in/vladimir-nasalciuc-7bb694256" target="_blank" class="link">LinkedIn Profile</a>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <h3 class="section-title">Navigation</h3>
+    <ul class="nav-list">
+      {navigation.map((item) => (
+        <li class="nav-item">
+          <a
+            href={item.href}
+            class={`nav-link ${currentPath === item.href ? 'active' : ''}`}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="tech-stack">
+    <h3 class="section-title">Core Technologies</h3>
+    
+    <div class="tech-category">
+      <h4>AI & Machine Learning</h4>
+      <div class="tech-list">
+        LangChain, LangGraph, scikit-learn, XGBoost, LightGBM, PyTorch, RAG Systems, Multi-Agent Architectures, Vector Databases, NLP
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h4>Development & Infrastructure</h4>
+      <div class="tech-list">
+        Python, JavaScript, TypeScript, FastAPI, REST APIs, Docker, Redis, Neo4j, ChromaDB, React, Next.js
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h4>Data Science & Research</h4>
+      <div class="tech-list">
+        pandas, NumPy, SciPy, SHAP, Plotly, Matplotlib, Seaborn, Feature Engineering, Econometrics, Statistical Analysis
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h4>Domain Expertise</h4>
+      <div class="tech-list">
+        Conversational AI, Prompt Engineering, Model Optimization, Business Intelligence, Marketing Analytics, Production Deployment
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Left Sidebar */
+  .sidebar {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 40px 30px;
+    position: relative;
+    order: 1;
+  }
+
+  .profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .photo-placeholder {
+    width: 180px;
+    height: 200px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: 3px solid rgba(255,255,255,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-placeholder::before {
+    content: "📸 Photo Here";
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .photo-placeholder:has(.profile-photo)::before {
+    display: none;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(45deg, #fff, #ecf0f1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+  }
+
+  .contact-info {
+    margin-bottom: 30px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .contact-icon {
+    width: 20px;
+    margin-right: 12px;
+    opacity: 0.8;
+  }
+
+  .link {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .link:hover {
+    color: #3498db;
+  }
+
+  .navigation {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+
+  .nav-item {
+    margin-bottom: 8px;
+  }
+
+  .nav-link {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+  }
+
+  .nav-link.active {
+    background-color: #3498db;
+    color: white;
+  }
+
+  .tech-stack {
+    margin-bottom: 30px;
+  }
+
+  .tech-category {
+    margin-bottom: 20px;
+  }
+
+  .tech-category h4 {
+    color: #3498db;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .tech-list {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #bdc3c7;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      order: 2;
+      padding: 30px 20px;
+    }
+  }
+</style>

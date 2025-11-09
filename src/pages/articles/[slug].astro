@@ -1,0 +1,143 @@
+---
+import { getCollection } from 'astro:content';
+import CVLayout from '@/layouts/CVLayout.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article }
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+
+// Get related articles (same category, excluding current)
+const allArticles = await getCollection('articles');
+const relatedArticles = allArticles
+  .filter(a => a.slug !== article.slug && a.data.category === article.data.category)
+  .slice(0, 3);
+
+// Calculate reading time (rough estimation)
+const wordsPerMinute = 200;
+const wordCount = article.body.split(' ').length;
+const readingTime = Math.ceil(wordCount / wordsPerMinute);
+---
+
+<CVLayout 
+  title={`${article.data.title} - Vladimir Nasalciuc`}
+  description={article.data.description}
+>
+  <!-- Article Header -->
+  <div class="header">
+    <div class="article-breadcrumb">
+      <a href="/articles" class="breadcrumb-link">← Back to Articles</a>
+    </div>
+    <h1>{article.data.title}</h1>
+    <div class="subtitle">{article.data.category}</div>
+    <div class="profile-summary">
+      {article.data.description}
+    </div>
+  </div>
+
+  <!-- Article Meta Information -->
+  <div class="content-section">
+    <h2>Article Details</h2>
+    <div class="article-meta-grid">
+      <div class="meta-item">
+        <h4>📅 Published</h4>
+        <p>{new Date(article.data.publishDate).toLocaleDateString('en-US', { 
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric' 
+        })}</p>
+      </div>
+      <div class="meta-item">
+        <h4>📖 Reading Time</h4>
+        <p>{readingTime} min read</p>
+      </div>
+      <div class="meta-item">
+        <h4>🏷️ Category</h4>
+        <p>{article.data.category}</p>
+      </div>
+      {article.data.venue && (
+        <div class="meta-item">
+          <h4>🏛️ Published In</h4>
+          <p>{article.data.venue}</p>
+        </div>
+      )}
+    </div>
+  </div>
+
+  <!-- Article Tags -->
+  <div class="content-section">
+    <h2>Topics & Technologies</h2>
+    <div class="tech-tags">
+      {article.data.tags.map((tag) => (
+        <span class="tech-tag">{tag}</span>
+      ))}
+    </div>
+  </div>
+
+  <!-- Article Content -->
+  <div class="content-section">
+    <div class="article-content">
+      <Content />
+    </div>
+  </div>
+
+  <!-- Related Articles -->
+  {relatedArticles.length > 0 && (
+    <div class="content-section">
+      <h2>Related Articles</h2>
+      <div class="related-articles">
+        {relatedArticles.map((relatedArticle) => (
+          <div class="related-article-card">
+            <h4>
+              <a href={`/articles/${relatedArticle.slug}`}>
+                {relatedArticle.data.title}
+              </a>
+            </h4>
+            <p>{relatedArticle.data.description}</p>
+            <div class="article-meta-small">
+              <span>{relatedArticle.data.category}</span>
+              <span>{new Date(relatedArticle.data.publishDate).toLocaleDateString()}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Share & Navigation -->
+  <div class="content-section">
+    <div class="article-footer">
+      <div class="share-section">
+        <h4>Share this article</h4>
+        <div class="share-buttons">
+          <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.data.title)}&url=${encodeURIComponent(Astro.url.href)}`} 
+             class="share-btn twitter" target="_blank" rel="noopener">
+            🐦 Twitter
+          </a>
+          <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.href)}`} 
+             class="share-btn linkedin" target="_blank" rel="noopener">
+            💼 LinkedIn
+          </a>
+          <button class="share-btn copy" onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied!')">
+            📋 Copy Link
+          </button>
+        </div>
+      </div>
+      
+      <div class="article-navigation">
+        <a href="/articles" class="nav-btn secondary">
+          ← All Articles
+        </a>
+        <a href="/contact" class="nav-btn primary">
+          Discuss This Topic →
+        </a>
+      </div>
+    </div>
+  </div>
+</CVLayout>
