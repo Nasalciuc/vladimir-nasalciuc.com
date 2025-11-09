@@ -12,7 +12,9 @@ const currentPath = Astro.url.pathname;
 <div class="sidebar">
   <div class="profile-section">
     <div class="photo-placeholder">
-      <img src={`${import.meta.env.BASE_URL}/vladimir-photo.jpg`} alt="Vladimir Nasalciuc" class="profile-photo" loading="eager" />
+      <div class="photo-initials">
+        <span class="initials">VN</span>
+      </div>
     </div>
     <div class="name">VLADIMIR NASALCIUC</div>
     <div class="title">AI Developer & ML Specialist</div>
@@ -120,10 +122,21 @@ const currentPath = Astro.url.pathname;
     overflow: hidden;
   }
 
-  .photo-placeholder::before {
-    content: "📸 Photo Here";
-    color: rgba(255,255,255,0.8);
-    text-align: center;
+  .photo-initials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+
+  .initials {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    letter-spacing: 2px;
   }
 
   .profile-photo {
