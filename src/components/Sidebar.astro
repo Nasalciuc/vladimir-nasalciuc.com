@@ -12,7 +12,7 @@ const currentPath = Astro.url.pathname;
 <div class="sidebar">
   <div class="profile-section">
     <div class="photo-placeholder">
-      <img src="/vladimir-nasalciuc.com/vladimir-photo.jpg" alt="Vladimir Nasalciuc" class="profile-photo" loading="eager" />
+      <img src="/vladimir-photo.jpg" alt="Vladimir Nasalciuc" class="profile-photo" loading="eager" />
     </div>
     <div class="name">VLADIMIR NASALCIUC</div>
     <div class="title">AI Developer & ML Specialist</div>
@@ -246,8 +246,21 @@ const currentPath = Astro.url.pathname;
   /* Responsive Design */
   @media (max-width: 768px) {
     .sidebar {
+      position: fixed;
+      top: 70px; /* Below mobile header */
+      left: 0;
+      height: calc(100vh - 70px);
+      width: 280px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+      overflow-y: auto;
       order: 2;
       padding: 30px 20px;
+    }
+
+    .sidebar.mobile-open {
+      transform: translateX(0);
     }
   }
 </style>
