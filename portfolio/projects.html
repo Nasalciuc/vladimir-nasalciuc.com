@@ -1,792 +1,283 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Vladimir Nasalciuc</title>
+    <meta name="description" content="Projects by Vladimir Nasalciuc - AI Developer & Machine Learning Specialist">
+    <meta name="keywords" content="AI Developer, Machine Learning, Multi-Agent Systems, Conversational AI, Software Engineering, Data Science">
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    <div class="container">
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
+    <!-- Container Principal -->
+    <div class="cv-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Profile Section -->
             <div class="profile-section">
-                <div class="profile-photo">
-                    <img src="images/vladimir_photo.jpg" alt="Vladimir Nasalciuc">
+                <div class="photo-container">
+                    <img src="images/vladimir-photo.jpg" alt="Vladimir Nasalciuc" class="profile-photo">
                 </div>
-                <h1>Vladimir Nasalciuc</h1>
-                <div class="title">AI Engineer & ML Specialist</div>
-                <div class="location">📍 Chișinău, Moldova</div>
+                <div class="profile-name">VLADIMIR NASALCIUC</div>
+                <div class="profile-title">AI Developer & ML Specialist</div>
             </div>
 
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-item">
-                    <span class="nav-icon">🏠</span>
-                    Home
-                </a>
-                <a href="about.html" class="nav-item">
-                    <span class="nav-icon">👤</span>
-                    About
-                </a>
-                <a href="projects.html" class="nav-item active">
-                    <span class="nav-icon">💼</span>
-                    Projects
-                </a>
-                <a href="articles.html" class="nav-item">
-                    <span class="nav-icon">📰</span>
-                    Articles
-                </a>
-            </nav>
-
+            <!-- Contact Info -->
             <div class="contact-section">
-                <h3>Contact</h3>
-                <a href="mailto:vladimir.nasalciuc@gmail.com" class="contact-link">
-                    <span class="contact-icon">📧</span>
-                    vladimir.nasalciuc@gmail.com
-                </a>
-                <a href="https://linkedin.com/in/vladimir-nasalciuc" class="contact-link">
-                    <span class="contact-icon">🔗</span>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/nasalciuc" class="contact-link">
-                    <span class="contact-icon">💻</span>
-                    GitHub
-                </a>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span>nasalciucvladimir3@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span>+373 79 533 494</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <span>Chișinău, Moldova</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github contact-icon"></i>
+                    <span>github.com/Nasalciuc</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <span>LinkedIn Profile</span>
+                </div>
             </div>
 
+            <!-- Navigation -->
+            <div class="navigation-section">
+                <h3 class="section-header">Navigation</h3>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="projects.html" class="nav-item active">Projects</a>
+                <a href="articles.html" class="nav-item">Articles</a>
+            </div>
+
+            <!-- Core Technologies -->
             <div class="tech-section">
-                <div class="tech-category">
-                    <h4>AGENTIC AI</h4>
-                    <div class="tech-list">LangChain, LangGraph, Multi-Agent Systems, Agentic Workflows, LLM Orchestra-tion, Fine-tuning</div>
-                </div>
+                <h3 class="section-header">Core Technologies</h3>
                 
                 <div class="tech-category">
-                    <h4>AI & MACHINE LEARNING</h4>
-                    <div class="tech-list">TensorFlow, PyTorch, Scikit-learn, XGBoost, LightGBM, Transformers, BERT, OpenAI API, Anthropic Claude</div>
+                    <h4>AI & Machine Learning</h4>
+                    <div class="tech-list">
+                        LangChain, LangGraph, scikit-learn, XGBoost, LightGBM, PyTorch, RAG Systems, Multi-Agent Architectures, Vector Databases, NLP
+                    </div>
                 </div>
-                
+
                 <div class="tech-category">
-                    <h4>DATA & ANALYTICS</h4>
-                    <div class="tech-list">pandas, NumPy, Matplotlib, Seaborn, Plotly, SHAP, Statistical Analysis, Feature Engineering</div>
+                    <h4>Development & Infrastructure</h4>
+                    <div class="tech-list">
+                        Python, JavaScript, TypeScript, FastAPI, REST APIs, Docker, Redis, Neo4j, ChromaDB, React, Next.js
+                    </div>
                 </div>
-                
+
                 <div class="tech-category">
-                    <h4>BACKEND & INFRASTRUCTURE</h4>
-                    <div class="tech-list">FastAPI, Python, Docker, Redis, ChromaDB, Neo4j, REST API, Async Programming</div>
+                    <h4>Data Science & Research</h4>
+                    <div class="tech-list">
+                        pandas, NumPy, SciPy, SHAP, Plotly, Matplotlib, Seaborn, Feature Engineering, Econometrics, Statistical Analysis
+                    </div>
                 </div>
-                
+
                 <div class="tech-category">
-                    <h4>FRONTEND & INTERFACES</h4>
-                    <div class="tech-list">React, TypeScript, JavaScript, HTML5, CSS3, Responsive Design</div>
-                </div>
-            </div>
-        </aside>
-
-        <!-- MAIN CONTENT -->
-        <main class="main-content">
-            <div class="header">
-                <h1>Projects</h1>
-                <div class="subtitle">AI & Machine Learning Solutions</div>
-            </div>
-
-            <!-- Project 1: Seismic Tsunami Risk Prediction -->
-            <div class="content-section">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h2>🌊 Seismic Tsunami Risk Prediction System</h2>
-                        <div class="project-meta">
-                            <span class="project-category">Machine Learning & Safety Systems</span>
-                            <span class="project-period">Oct 2025</span>
-                            <span class="project-status status-production">Production</span>
-                            <span class="project-type">Independent ML Project</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Am dezvoltat un sistem complet de machine learning pentru predicția riscului de tsunami, integrând expertiză seismologică, modele fizice și tehnici avansate de AI. Proiectul include pipeline end-to-end, de la date brute seismice la model calibrat și vizualizare interactivă 3D, aplicabil în sisteme critice de alertă timpurie.</p>
-                        
-                        <div class="detailed-description">
-                            <p><strong>Technical Implementation:</strong> Am analizat peste 780 de evenimente seismice globale și am generat 20+ features derivate (tsunami_risk_score, intensitate tectonică, proximitate față de zone de subducție), folosind modele fizice Wells & Coppersmith și Hanks-Kanamori și statistici temporale avansate, cu transformări Box-Cox, QuantileTransformer și encoding ciclic.</p>
-                        </div>
-                    </div>
-                    <div class="achievements-section">
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>Pipeline-ul ML a testat peste 10 algoritmi (RandomForest, GradientBoosting, SVM, Logistic Regression, XGBoost, LightGBM)</li>
-                            <li>Optimizare hiperparametri prin RandomizedSearchCV (scoring custom 70% recall / 30% precision)</li>
-                            <li>Performanța obținută: ROC-AUC ≈ 0.85, recall > 0.90 pe evenimente reale</li>
-                            <li>Dashboard interactiv 3D Plotly cu stratificare globală a riscului</li>
-                            <li>Modelul a detectat peste 90% din evenimentele reale, minimizând alarmele false</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4>Technologies:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">pandas</span>
-                            <span class="tech-tag">NumPy</span>
-                            <span class="tech-tag">SciPy</span>
-                            <span class="tech-tag">scikit-learn</span>
-                            <span class="tech-tag">XGBoost</span>
-                            <span class="tech-tag">LightGBM</span>
-                            <span class="tech-tag">Optuna</span>
-                            <span class="tech-tag">imbalanced-learn</span>
-                            <span class="tech-tag">SHAP</span>
-                            <span class="tech-tag">GeoPandas</span>
-                            <span class="tech-tag">Plotly/Dash</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Seaborn</span>
-                        </div>
-                    </div>
-                    <div class="project-results">
-                        <h4>Results:</h4>
-                        <p>Model calibrat și probabilități interpretabile, dashboard 3D interactiv pentru risc global, pipeline complet reproducibil cu validare temporală și optimizare automată</p>
-                    </div>
-                    <div class="github-link">
-                        <a href="https://github.com/Nasalciuc/seismic_tsunami_ml_project" target="_blank">
-                            <span class="contact-icon">💻</span>
-                            View on GitHub
-                        </a>
+                    <h4>Domain Expertise</h4>
+                    <div class="tech-list">
+                        Conversational AI, Prompt Engineering, Model Optimization, Business Intelligence, Marketing Analytics, Production Deployment
                     </div>
                 </div>
             </div>
-
-            <!-- Project 2: House Price Prediction -->
-            <div class="content-section">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h2>🏠 House Price Prediction Project</h2>
-                        <div class="project-meta">
-                            <span class="project-category">Business Intelligence & PropTech</span>
-                            <span class="project-period">Nov 2025</span>
-                            <span class="project-status status-production">Production</span>
-                            <span class="project-type">Independent ML Project</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Am dezvoltat un sistem complet de machine learning pentru predicția prețurilor imobiliare, cu pipeline end-to-end de la date brute la model calibrat și interpretabil, aplicabil în estimări precise și decizii de investiții.</p>
-                        
-                        <div class="detailed-description">
-                            <p><strong>Technical Implementation:</strong> Am analizat 545 proprietăți rezidențiale și am generat 15+ features derivate (price_per_sqft, area_per_bedroom, bathroom_bedroom_ratio, luxury_score, location_score), folosind encoding binary, one-hot și ordinal, standardizare cu StandardScaler și detectare outlieri prin IQR și Z-Score.</p>
-                        </div>
-                    </div>
-                    <div class="achievements-section">
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>Pipeline-ul ML a testat mai mulți algoritmi (Linear Regression, Ridge, Lasso, Decision Tree, Random Forest, Gradient Boosting)</li>
-                            <li>Optimizare hiperparametri prin GridSearchCV și RandomizedSearchCV</li>
-                            <li>Performanța obținută: R² = 0.887, MAE = $284,000, RMSE = $390,000</li>
-                            <li>Segmentare ROI și analiză driveri principali</li>
-                            <li>Dashboard interactiv Plotly pentru vizualizare comparativă</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4>Technologies:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">pandas</span>
-                            <span class="tech-tag">NumPy</span>
-                            <span class="tech-tag">SciPy</span>
-                            <span class="tech-tag">scikit-learn</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Seaborn</span>
-                            <span class="tech-tag">Plotly</span>
-                        </div>
-                    </div>
-                    <div class="project-results">
-                        <h4>Results:</h4>
-                        <p>Model robust și calibrat, insights de business aplicabili, pipeline reproducibil și validat statistic, predicții precise pentru portofolii de proprietăți</p>
-                    </div>
-                    <div class="github-link">
-                        <a href="https://github.com/Nasalciuc/House-price-prediction-Sigmoid-project" target="_blank">
-                            <span class="contact-icon">💻</span>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: Multi-Agent Social Media Automation -->
-            <div class="content-section">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h2>🤖 Multi-Agent Social Media Automation (FMF)</h2>
-                        <div class="project-meta">
-                            <span class="project-category">Multi-Agent Systems & Marketing</span>
-                            <span class="project-period">Iunie 2025</span>
-                            <span class="project-status status-award-winner">Award Winner</span>
-                            <span class="project-type">Competition Project</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Creat un sistem multi-agent pentru automatizarea social media, cu generare automată de conținut, publicare coordonată și monitorizare în timp real a performanței. Sistemul a câștigat locul I la Multi-Agent Systems Bootcamp datorită designului inovator și eficienței demonstrabile.</p>
-                    </div>
-                    <div class="achievements-section">
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>Sistem multi-agent pentru Federația Moldovenească de Fotbal (FMF)</li>
-                            <li>Generare automată de conținut și publicare coordonată</li>
-                            <li>Monitorizare în timp real a performanței</li>
-                            <li>Design inovator și eficiență demonstrabilă</li>
-                            <li>Premiul I la competiție națională</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4>Technologies:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">LangGraph</span>
-                            <span class="tech-tag">Multi-Agent Systems</span>
-                            <span class="tech-tag">Social Media APIs</span>
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">Content Generation</span>
-                        </div>
-                    </div>
-                    <div class="project-results">
-                        <h4>Results:</h4>
-                        <p>Sistem câștigător al competiției, implementare pentru organizație națională de fotbal</p>
-                    </div>
-                    <div class="github-link">
-                        <a href="https://github.com/Nasalciuc/ghostwriter-project" target="_blank">
-                            <span class="contact-icon">💻</span>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4: MediDive AI Medical Assistant -->
-            <div class="content-section">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h2>🏥 MediDive AI Medical Assistant</h2>
-                        <div class="project-meta">
-                            <span class="project-category">Healthcare AI & Knowledge Systems</span>
-                            <span class="project-period">Mar 2025 - Jun 2025</span>
-                            <span class="project-status status-production-clinical">Production (Clinical)</span>
-                            <span class="project-type">Enterprise Project</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Am dezvoltat și arhitectat un asistent medical AI, evoluat de la un sistem bazat pe knowledge graph la o arhitectură multi-agent scalabilă, bazată pe agentic workflows, pentru procesarea informațiilor clinice.</p>
-                    </div>
-                    <div class="achievements-section">
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>Framework zero-hallucination pentru validarea surselor medicale</li>
-                            <li>Modul RAG pentru sinteza informațiilor complexe</li>
-                            <li>Interfață completă în React și TypeScript</li>
-                            <li>Reducerea timpului de documentare medicală cu 30–50%</li>
-                            <li>Detecție automată a interacțiunilor medicamentoase cu 95%+ precizie</li>
-                            <li>Interfață stabilă pentru 25–200+ utilizatori concurenți</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4>Technologies:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Neo4j</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Ngrok</span>
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">RAG</span>
-                            <span class="tech-tag">Multi-Agent Systems</span>
-                            <span class="tech-tag">Agentic Workflows</span>
-                            <span class="tech-tag">Knowledge Graphs</span>
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-                    </div>
-                    <div class="project-results">
-                        <h4>Results:</h4>
-                        <p>Sistem implementat în mediu clinic real, reduceri semnificative de timp, precizie ridicată în detectarea interacțiunilor</p>
-                    </div>
-                    <div class="github-link">
-                        <a href="https://github.com/username/chatty-rag-interface" target="_blank">
-                            <span class="contact-icon">💻</span>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5: Dulcinella Learning Assistant -->
-            <div class="content-section">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h2>🎓 Dulcinella Learning Assistant</h2>
-                        <div class="project-meta">
-                            <span class="project-category">Educational AI & Conversational Systems</span>
-                            <span class="project-period">Jun 2025 - Aug 2025</span>
-                            <span class="project-status status-production">Production</span>
-                            <span class="project-type">Enterprise Project</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>AI educațional conversațional cu vector search și NLP română, bazat pe ChromaDB și Redis. Sistem integrat în ecosistemul Smart AI Agents pentru personalizarea experiențelor de învățare.</p>
-                    </div>
-                    <div class="achievements-section">
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>Vector search și NLP pentru limba română</li>
-                            <li>Integrare ChromaDB și Redis pentru persistență</li>
-                            <li>Personalizare experiențe de învățare</li>
-                            <li>Sistem scalabil și responsive</li>
-                            <li>Implementare în mediu de producție</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4>Technologies:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">LangGraph</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">ChromaDB</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Conversational AI</span>
-                            <span class="tech-tag">Educational Technology</span>
-                            <span class="tech-tag">NLP</span>
-                        </div>
-                    </div>
-                    <div class="project-results">
-                        <h4>Results:</h4>
-                        <p>Sistem educațional AI funcțional, suport pentru învățarea personalizată</p>
-                    </div>
-                    <div class="github-link">
-                        <a href="https://github.com/vladimirnasalciuc/dulcinella-learning" target="_blank">
-                            <span class="contact-icon">💻</span>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6: XOFlowers Enterprise AI Agent -->
-            <div class="content-section">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h2>🌸 XOFlowers Enterprise AI Agent</h2>
-                        <div class="project-meta">
-                            <span class="project-category">Enterprise Automation & Customer Service</span>
-                            <span class="project-period">Jun 2025 - Aug 2025</span>
-                            <span class="project-status status-production-enterprise">Production (Enterprise)</span>
-                            <span class="project-type">Enterprise Project</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Chatbot enterprise pentru e-commerce, cu FastAPI async, fallback systems, Telegram & Instagram integrations. Dezvoltat în cadrul internship-ului la Smart AI Agents.</p>
-                    </div>
-                    <div class="achievements-section">
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>FastAPI async pentru performanță optimă</li>
-                            <li>Fallback systems inteligente</li>
-                            <li>Integrări Telegram & Instagram</li>
-                            <li>Sistem enterprise scalabil</li>
-                            <li>Reducerea costurilor operaționale cu 60%</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4>Technologies:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Enterprise AI</span>
-                            <span class="tech-tag">Process Automation</span>
-                            <span class="tech-tag">Customer Service AI</span>
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Business Intelligence</span>
-                            <span class="tech-tag">Telegram API</span>
-                            <span class="tech-tag">Instagram API</span>
-                        </div>
-                    </div>
-                    <div class="project-results">
-                        <h4>Results:</h4>
-                        <p>Reducere semnificativă a costurilor, sistem enterprise funcțional</p>
-                    </div>
-                    <div class="github-link">
-                        <a href="https://github.com/Lucian-Adrian/flower-chat-agent" target="_blank">
-                            <span class="contact-icon">💻</span>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/sidebar.css">
-  <link rel="stylesheet" href="./css/mobile.css">
-  
-  <style>
-    /* Projects page specific styles */
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 30px;
-      padding: 20px 0;
-      border-bottom: 1px solid #e9ecef;
-    }
-    
-    .filter-btn {
-      background: #f8f9fa;
-      border: 1px solid #dee2e6;
-      padding: 8px 16px;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-    
-    .filter-btn:hover {
-      background: #e9ecef;
-    }
-    
-    .filter-btn.active {
-      background: #3498db;
-      color: white;
-      border-color: #3498db;
-    }
-    
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-    }
-    
-    .project-card {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-      border: 1px solid #e9ecef;
-      opacity: 1;
-      transform: scale(1);
-    }
-    
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-    }
-    
-    .project-card.hidden {
-      opacity: 0;
-      transform: scale(0.95);
-      pointer-events: none;
-    }
-    
-    .project-image {
-      width: 100%;
-      height: 200px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .project-image::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
-      transform: translateX(-100%);
-      transition: transform 0.6s ease;
-    }
-    
-    .project-card:hover .project-image::before {
-      transform: translateX(100%);
-    }
-    
-    .project-content {
-      padding: 25px;
-    }
-    
-    .project-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-    
-    .project-description {
-      color: #666;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    
-    .project-tech {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
-    
-    .tech-badge {
-      background: #f8f9fa;
-      color: #495057;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      border: 1px solid #e9ecef;
-    }
-    
-    .project-links {
-      display: flex;
-      gap: 12px;
-    }
-    
-    .project-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 16px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-      font-size: 0.9rem;
-      transition: all 0.3s ease;
-    }
-    
-    .project-link.primary {
-      background: #3498db;
-      color: white;
-    }
-    
-    .project-link.primary:hover {
-      background: #2980b9;
-    }
-    
-    .project-link.secondary {
-      background: #f8f9fa;
-      color: #495057;
-      border: 1px solid #dee2e6;
-    }
-    
-    .project-link.secondary:hover {
-      background: #e9ecef;
-    }
-    
-    .project-stats {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px 0;
-      padding: 15px;
-      background: #f8f9fa;
-      border-radius: 8px;
-    }
-    
-    .stat {
-      text-align: center;
-    }
-    
-    .stat-value {
-      font-weight: 700;
-      color: #3498db;
-      font-size: 1.2rem;
-    }
-    
-    .stat-label {
-      font-size: 0.8rem;
-      color: #666;
-      margin-top: 4px;
-    }
-    
-    /* Modal Styles */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    
-    .modal.show {
-      opacity: 1;
-    }
-    
-    .modal-content {
-      background-color: #fefefe;
-      margin: 5% auto;
-      padding: 0;
-      border-radius: 15px;
-      width: 90%;
-      max-width: 800px;
-      max-height: 90vh;
-      overflow-y: auto;
-      transform: scale(0.9);
-      transition: transform 0.3s ease;
-    }
-    
-    .modal.show .modal-content {
-      transform: scale(1);
-    }
-    
-    .modal-header {
-      padding: 30px 30px 20px;
-      border-bottom: 1px solid #e9ecef;
-    }
-    
-    .modal-body {
-      padding: 30px;
-    }
-    
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-    
-    .close:hover {
-      color: #000;
-    }
-    
-    @media (max-width: 768px) {
-      .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
-      .filters {
-        gap: 8px;
-      }
-      
-      .filter-btn {
-        font-size: 0.8rem;
-        padding: 6px 12px;
-      }
-      
-      .project-content {
-        padding: 20px;
-      }
-      
-      .modal-content {
-        width: 95%;
-        margin: 10% auto;
-      }
-      
-      .modal-header,
-      .modal-body {
-        padding: 20px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="cv-container">
-    <!-- Sidebar Overlay for Mobile -->
-    <div class="sidebar-overlay"></div>
-    
-    <!-- Mobile Header -->
-    <div class="mobile-header">
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <h1>Projects</h1>
-    </div>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar content will be dynamically loaded -->
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-      <!-- Header Section -->
-      <div class="header">
-        <h1>Projects Portfolio</h1>
-        <div class="subtitle">AI/ML Solutions & Production Systems</div>
-        <div class="profile-summary">
-          A collection of projects spanning AI development, machine learning, multi-agent systems, 
-          and production-ready applications. Each project demonstrates practical problem-solving 
-          with modern technologies and measurable business impact.
         </div>
-      </div>
 
-      <!-- Filters -->
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
-        <button class="filter-btn" data-filter="web-dev">Web Development</button>
-        <button class="filter-btn" data-filter="data-science">Data Science</button>
-        <button class="filter-btn" data-filter="automation">Automation</button>
-      </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>PROJECTS</h1>
+                <div class="subtitle">AI & Machine Learning Solutions</div>
+                <div class="profile-summary">
+                    A comprehensive portfolio of AI and Machine Learning projects ranging from enterprise-grade multi-agent systems to research-driven applications. Each project demonstrates practical implementation of cutting-edge AI technologies with measurable business impact and rigorous scientific methodology.
+                </div>
+            </div>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid" id="projectsGrid">
-        <!-- Projects will be dynamically loaded here -->
-      </div>
+            <div class="content-section">
+                <h2 class="section-title">🔬 Featured Research Projects</h2>
+
+                
+                <div class="project-item">
+                    <div class="project-header">
+                        <div class="project-title">🌊 Seismic Tsunami Risk Prediction System</div>
+                        <div class="project-meta">
+                            <span class="project-type">Independent ML Project</span>
+                            <span class="project-date">Oct 2025</span>
+                            <span class="project-category">Machine Learning & Safety Systems</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        Am dezvoltat un sistem complet de machine learning pentru predicția riscului de tsunami, integrând expertiză seismologică, modele fizice și tehnici avansate de AI. Proiectul include pipeline end-to-end, de la date brute seismice la model calibrat și vizualizare interactivă 3D, aplicabil în sisteme critice de alertă timpurie.
+                    </div>
+
+                    <div class="technical-details">
+                        <h4>Technical Implementation:</h4>
+                        <ul class="achievements">
+                            <li>Am analizat peste 780 de evenimente seismice globale și am generat 20+ features derivate (tsunami_risk_score, intensitate tectonică, proximitate față de zone de subducție)</li>
+                            <li>Pipeline-ul ML a testat peste 10 algoritmi (RandomForest, GradientBoosting, SVM, Logistic Regression, XGBoost, LightGBM)</li>
+                            <li>Performanța obținută: ROC-AUC ≈ 0.85, recall > 0.90 pe evenimente reale, cu analize SHAP și validare temporală</li>
+                            <li>Dashboard interactiv 3D Plotly cu stratificare globală a riscului și framework decizional cost-sensitiv</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">SHAP</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">GeoPandas</span>
+                        <span class="tech-tag">LightGBM</span>
+                        <span class="tech-tag">Optuna</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Nasalciuc/seismic_tsunami_ml_project" target="_blank" class="github-link">🔗 View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <div class="project-title">🏠 House Price Prediction Project</div>
+                        <div class="project-meta">
+                            <span class="project-type">Independent ML Project</span>
+                            <span class="project-date">Nov 2025</span>
+                            <span class="project-category">Business Intelligence & PropTech</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        Am dezvoltat un sistem complet de machine learning pentru predicția prețurilor imobiliare, cu pipeline end-to-end de la date brute la model calibrat și interpretabil, aplicabil în estimări precise și decizii de investiții.
+                    </div>
+
+                    <div class="technical-details">
+                        <h4>Technical Implementation:</h4>
+                        <ul class="achievements">
+                            <li>Am analizat 545 proprietăți rezidențiale și am generat 15+ features derivate (price_per_sqft, area_per_bedroom, luxury_score)</li>
+                            <li>Pipeline-ul ML a testat algoritmi cu optimizare hiperparametri prin GridSearchCV și RandomizedSearchCV</li>
+                            <li>Performanța obținută: R² = 0.887, MAE = $284,000, RMSE = $390,000 cu segmentare ROI</li>
+                            <li>Dashboard interactiv Plotly pentru vizualizare comparativă pe segmente de piață și identificare ROI</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">pandas</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Seaborn</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Nasalciuc/House-price-prediction-Sigmoid-project" target="_blank" class="github-link">🔗 View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <div class="project-title">🤖 Multi-Agent Social Media Automation</div>
+                        <div class="project-meta">
+                            <span class="project-type">Award-Winning Project</span>
+                            <span class="project-date">Jun 2025</span>
+                            <span class="project-category">Multi-Agent Systems & AI</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <span class="award-badge">🥇 First Place</span>
+                        Sistem multi-agent câștigător pentru automatizarea social media la Federația Moldovenească de Fotbal (FMF), cu generare automată de conținut, publicare coordonată și monitorizare în timp real a performanței.
+                    </div>
+
+                    <div class="technical-details">
+                        <h4>Key Achievements:</h4>
+                        <ul class="achievements">
+                            <li>Automated content generation pentru multiple platforme sociale</li>
+                            <li>Multi-agent orchestration cu LangGraph pentru coordonarea activităților</li>
+                            <li>Real-time analytics și performance tracking pentru optimizare continuă</li>
+                            <li>Câștigat locul I la Multi-Agent Systems Bootcamp pentru design inovator</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">Multi-Agent Systems</span>
+                        <span class="tech-tag">Social Media APIs</span>
+                        <span class="tech-tag">Content Generation</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Lucian-Adrian/ghostwriter" target="_blank" class="github-link">🔗 View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <div class="project-title">💼 Tinkerbell AI Marketing Platform</div>
+                        <div class="project-meta">
+                            <span class="project-type">Business AI Platform</span>
+                            <span class="project-date">Jun 2025</span>
+                            <span class="project-category">Marketing Automation & AI</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <span class="award-badge">🥈 Second Place</span>
+                        Platformă AI marketing automation câștigătoare care automatizează customer acquisition pentru startup-uri. Sistem complet de la business analysis la campaign generation, demonstrând 16x-83x ROI potential.
+                    </div>
+
+                    <div class="technical-details">
+                        <h4>Business Impact:</h4>
+                        <ul class="achievements">
+                            <li>Automated customer acquisition pipeline pentru startup ecosystems</li>
+                            <li>Business analysis și campaign generation completamente automatizate</li>
+                            <li>Demonstrat 16x-83x ROI potential cu targeting 46M businesses market opportunity</li>
+                            <li>Câștigat locul II la AI for Business Challenge (Hacktone Sigmoid & FAF ONG)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span class="tech-tag">AI Marketing</span>
+                        <span class="tech-tag">Business Intelligence</span>
+                        <span class="tech-tag">Customer Acquisition</span>
+                        <span class="tech-tag">Campaign Generation</span>
+                        <span class="tech-tag">ROI Optimization</span>
+                        <span class="tech-tag">LangChain</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Nasalciuc/26-Team" target="_blank" class="github-link">🔗 View on GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Project Details Modal -->
-  <div id="projectModal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h2 id="modalTitle"></h2>
-      </div>
-      <div class="modal-body">
-        <div id="modalContent"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script src="./js/main.js"></script>
-  <script src="./js/sidebar.js"></script>
-  <script src="./js/projects.js"></script>
-  <script>
-    // Initialize projects page
-    document.addEventListener('DOMContentLoaded', async () => {
-      // Wait for portfolio data to load
-      while (!window.portfolio || !window.portfolio.data) {
-        await new Promise(resolve => setTimeout(resolve, 100));
-      }
-
-      const data = window.portfolio.data;
-      
-      // Initialize sidebar
-      new Sidebar(data);
-      
-      // Initialize projects functionality
-      new ProjectsManager(data);
-    });
-  </script>
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
 </body>
 </html>
