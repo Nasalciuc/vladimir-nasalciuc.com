@@ -7,12 +7,13 @@ const navigation = [
 ];
 
 const currentPath = Astro.url.pathname;
+const photoPath = Astro.site + 'vladimir-nasalciuc.com/vladimir-photo.jpg';
 ---
 
 <div class="sidebar">
   <div class="profile-section">
     <div class="photo-placeholder">
-      <img src="/vladimir-photo.jpg" alt="Vladimir Nasalciuc" class="profile-photo" />
+      <img src={photoPath} alt="Vladimir Nasalciuc" class="profile-photo" />
     </div>
     <div class="name">VLADIMIR NASALCIUC</div>
     <div class="title">AI Developer & ML Specialist</div>
