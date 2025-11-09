@@ -1,6 +1,4 @@
 ---
-import vladimirPhoto from '../assets/vladimir-photo.jpg';
-
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
@@ -14,7 +12,7 @@ const currentPath = Astro.url.pathname;
 <div class="sidebar">
   <div class="profile-section">
     <div class="photo-placeholder">
-      <img src={vladimirPhoto.src} alt="Vladimir Nasalciuc" class="profile-photo" />
+      <img src="/vladimir-nasalciuc.com/vladimir-photo.jpg" alt="Vladimir Nasalciuc" class="profile-photo" loading="eager" />
     </div>
     <div class="name">VLADIMIR NASALCIUC</div>
     <div class="title">AI Developer & ML Specialist</div>
