@@ -87,12 +87,12 @@
       "description": "Specialized in integrating AI/ML techniques into economics-driven projects with focus on business optimization and predictive modeling.",
       "achievements": [
         "Data Analysis, Business Intelligence & Predictive Modelling",
-        "Econometrics, Statistics & Quantitative Research",
+        "Quantitative Finance, Statistics & Quantitative Research",
         "Marketing Analytics, Consumer Behavior & A/B Testing",
         "Applied Machine Learning for Business Optimization",
         "Developed interactive dashboards & predictive KPIs for decision support"
       ],
-      "technologies": ["Economics", "Data Science", "Business Analytics", "Econometrics"]
+      "technologies": ["Economics", "Data Science", "Business Analytics", "Quantitative Finance"]
     }
   ],
   "contact": {
@@ -107,7 +107,7 @@
   "techStack": {
     "ai_ml": "LangChain, LangGraph, scikit-learn, XGBoost, LightGBM, PyTorch, RAG Systems, Multi-Agent Architectures, Vector Databases, NLP",
     "development": "Python, JavaScript, TypeScript, FastAPI, REST APIs, Docker, Redis, Neo4j, ChromaDB, React, Next.js",
-    "data_science": "pandas, NumPy, SciPy, SHAP, Plotly, Matplotlib, Seaborn, Feature Engineering, Econometrics, Statistical Analysis",
+    "data_science": "pandas, NumPy, SciPy, SHAP, Plotly, Matplotlib, Seaborn, Feature Engineering, Quantitative Finance, Statistical Analysis",
     "domain": "Conversational AI, Prompt Engineering, Model Optimization, Business Intelligence, Marketing Analytics, Production Deployment"
   }
 }
