@@ -134,7 +134,7 @@ portfolio/
 
 ## 📧 Contact
 - **Email**: nasalciucvladimir3@gmail.com
-- **LinkedIn**: [Vladimir Nasalciuc](https://linkedin.com/in/vladimir-nasalciuc)
+- **LinkedIn**: [Vladimir Nasalciuc](https://www.linkedin.com/in/vladimir-nasalciuc)
 - **Location**: Chișinău, Moldova
 - **Languages**: Romanian (Native), English (Fluent)
 
